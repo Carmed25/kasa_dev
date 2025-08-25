@@ -1,6 +1,14 @@
 
 // import data from './data/appartements.json'
+
 import './App.css'
+import Home from './pages/Home'
+import About from './pages/About'
+import ErrorPage from './pages/ErrorPage'
+import Flat from './pages/Flat'
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   // state(etat, donnees, data)
@@ -10,9 +18,15 @@ function App() {
   // affichage (render)
 
   return (
-    <div>
-      <h1>Page d'accueil</h1>
-      <p>Tout fonctionne pour le moment</p>
+    <div className="App">
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/appartement/:id' element={<Flat />}/>
+        <Route path='*' element ={<ErrorPage />}/>
+      </Routes>
+  <Footer/>
     </div>
   )
 }
