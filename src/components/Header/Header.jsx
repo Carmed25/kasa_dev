@@ -1,5 +1,6 @@
 // import feuille de style , logo et navigation
-import Navbar from './Navbar'
+import './Header.scss'
+import Navbar from '../Navbar/Navbar'
 
 export default function Header(){
     return(

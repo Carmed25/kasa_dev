@@ -1,4 +1,6 @@
-//import feuille de style et logo
+//import logo
+import './Footer.scss'
+
 
 export default function Footer(){
     return(
