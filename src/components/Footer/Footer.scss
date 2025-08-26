@@ -1,0 +1,13 @@
+$font-size-medium: 24px;
+
+.footer {
+  background-color: black;
+  height: 209px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-medium;
+}

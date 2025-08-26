@@ -16,8 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
-      <AppRouter/>
+      <div className="App_container">
+        <Header/>
+        <AppRouter/>
+      </div>
       <Footer/>
     </div>
   )
