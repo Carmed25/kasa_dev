@@ -1,0 +1,18 @@
+$font-weight-medium : 500;
+$font-size-medium: 24px;
+
+.navbar_list{
+  display: flex;
+  justify-content: space-between;
+  gap: 57px;
+  list-style: none;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+  align-items: center;
+  height: 100%;
+  .navbar_link{
+    a{text-decoration: none;
+    color: black;
+    }
+    }
+}
