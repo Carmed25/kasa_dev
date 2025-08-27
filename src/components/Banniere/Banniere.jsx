@@ -1,6 +1,6 @@
 import './Banniere.scss'
 import imgBanHome from '../../assets/imgBanniereHome.jpg'
-
+// revoir pour image banniere page about et titre
 export default function Banniere(){
     return(
         <div className='banContainer'>

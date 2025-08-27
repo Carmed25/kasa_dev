@@ -1,0 +1,12 @@
+.gallery{
+    max-width: 1240px;
+    background-color: orange;/** #f6f6f6;*/
+    border-radius: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 55px;
+    grid-row-gap: 55px;
+    height:829px; /** test de la hauteur */
+    margin-top: 50px;
+}
