@@ -5,8 +5,10 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 55px;
-    grid-row-gap: 55px;
-    height:829px; /** test de la hauteur */
-    margin-top: 50px;
+    //grid-column-gap: 10px; a revoir  car gallery non centré*/
+    grid-row-gap: 33px;
+    min-height:100vh;
+    margin: 50px auto 0 auto;
+    padding-left: 33px;
+    padding-bottom: 50px;
 }
