@@ -1,12 +1,11 @@
 import './Banniere.scss'
-import imgBanHome from '../../assets/imgBanniereHome.jpg'
-// revoir pour image banniere page about et titre
-export default function Banniere(){
+// on affiche h1 seuleement si un titre est fourni
+export default function Banniere({image, title, opacity=0.6}){
     return(
         <div className='banContainer'>
-            <img className='banner_img' src={imgBanHome} alt='Bannière représentant une falaise au bord de la mer'/>
-            <div className='banner_overlay'></div>
-            <h1 className='banner_title'>Chez vous, partout et ailleurs</h1>
+            <img className='banner_img' src={image} alt='Bannière'/>
+            <div className='banner_overlay' style={{opacity:opacity}}></div>
+            {title && <h1 className='banner_title'>{title}</h1>}
         </div>
 
     );

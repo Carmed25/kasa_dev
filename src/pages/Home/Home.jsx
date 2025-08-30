@@ -3,13 +3,15 @@
 
 
 import './Home.scss'
-import Banniere from '../../components/Banniere/Banniere'
+import imgBanHome from '../../assets/imgBanniereHome.jpg'
 import Gallery from '../../components/Gallery/Gallery'
+import Banniere from '../../components/Banniere/Banniere'
 
 export default function Home(){
     return(
         <>
-            <Banniere/>
+            <Banniere
+            image={imgBanHome} title="Chez vous, partout et ailleurs"/>
             <Gallery/>
         </>
     )

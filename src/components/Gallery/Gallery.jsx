@@ -10,7 +10,8 @@ export default function Gallery(){
     <div className='gallery'>
     {data.map((appartement)=>( 
       <Card
-         key={appartement.id}
+         key={appartement.id} //utile seulement pour React pour savoir quel élément a été modifié
+         id={appartement.id}
          title={appartement.title}
          cover ={appartement.cover}
       />
