@@ -1,8 +1,7 @@
 
 //import Header from '../../components/Header/Header'
 //import Footer from '../components/Footer/Footer'
-
-// a creer : composant Carroussel, Rating, Tags 
+ 
 
 import './Flat.scss'
 import { Navigate, useParams } from 'react-router-dom'
@@ -40,8 +39,26 @@ export default function Flat(){
                 </div>
                 <div className='hostRating'>
                 <Host name={flat.host.name} picture={flat.host.picture}/> 
+                <Rating rating={parseInt(flat.rating)}/>
                 </div>
+            </div>
+            <div className='blocDeux'>
+                <Collapse title="Description" customWidth="582px">
+                    <p>{flat.description}
+                    </p>
+                </Collapse>
+                <Collapse title='Équipements' customWidth='582px'>
+                    <ul>
+                        {flat.equipments.map ((item, index)=>(
+                        <li key={index}>
+                            {item}
+                        </li>))}
+                    </ul>
+                
+                </Collapse>
+
             </div>
         </div>
     )
 }
+//parseInt pour etre sur d'avoir un nombre et non une chaine de caractères
