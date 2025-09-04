@@ -12,6 +12,7 @@ export default function Home(){
         <>
             <Banniere
             image={imgBanHome} title="Chez vous, partout et ailleurs"/>
+         
             <Gallery/>
         </>
     )
