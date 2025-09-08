@@ -20,8 +20,8 @@
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 2;
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 79px;
     color: red;
 }
 &_arrow-left{
@@ -36,8 +36,6 @@
     bottom:20px;
     left: 50%;
     transform: translateX(-50%);
-    color:white;
-    font-size: 18px;
-    font-weight: bold;
+    @include title($size-normal)
 }
 }

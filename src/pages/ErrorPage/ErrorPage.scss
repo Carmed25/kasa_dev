@@ -7,27 +7,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:#ff6060;
     font-family: "Montserrat";
     gap: 139px;
     margin-top: 139px;
     margin-bottom: 139px;
 
     &_title{
-        font-size: 288px;
-        font-weight:700;
+        @include title(288px,$weight-bold,$main-color)
 
     }
     &_text{
-        font-weight: 500;
-        font-size: 36px;
+        @include title ($size-mediumX,500,$main-color)
 
     }
 
     &_link{
-        color: black;
-        font-weight: 500;
-        font-size:18px;
+        @include title( $size-normal, 500, black)
     }
 
 }

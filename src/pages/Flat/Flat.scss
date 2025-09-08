@@ -18,7 +18,6 @@
     flex-direction: column;
 
     &_title{
-        margin-bottom: 12px;
         @include title($size:$size-mediumX,$color:$main-color)
     }
     &_location{

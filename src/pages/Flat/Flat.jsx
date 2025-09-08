@@ -42,7 +42,7 @@ export default function Flat(){
                 <Rating rating={parseInt(flat.rating)}/>
                 </div>
             </div>
-            <div className='blocDeux'>
+            <div className='blocDeux flatCollapse'>
                 <Collapse title="Description" customWidth="582px">
                     <p>{flat.description}
                     </p>
