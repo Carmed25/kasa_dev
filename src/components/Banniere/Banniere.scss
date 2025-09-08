@@ -1,5 +1,6 @@
-$font-weight-bold:700;
-$font-size-large:48px;
+
+
+@use './../../styles/variables' as* ;
 
 .banContainer{
 position: relative;
@@ -11,6 +12,9 @@ border: 1px solid black;
 overflow: hidden;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
 
 
     .banner_img{
@@ -18,6 +22,8 @@ margin-top: 50px;
         height: 100%;
         object-fit: cover;
         display: block;
+        position: absolute;
+        z-index: 0;
     }
     .banner_overlay{
         position: absolute;
@@ -32,15 +38,13 @@ margin-top: 50px;
     }
 
 
-    .banner_title{ /**revoir contouring du texte */
-        font-size: $font-size-large;
-        font-weight: $font-weight-bold;
-        color: white;
+    .banner_title{ //revoir contouring du texte 
+     
         text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         z-index: 2;
-        position: absolute;
-        top: 78px;
-        left: 273px;
+        position: relative;
+        // absolute top: 78px - left: 273px;
+        @include title ($size-large,$weight-bold);
 
     }
 }

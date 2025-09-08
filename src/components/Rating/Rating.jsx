@@ -10,11 +10,13 @@ export default function Rating({rating}){
     return(
         <div className='rating'>
             {stars.map((star)=>(
-                <img className='star'
+                <div className='rating_container'>
+                <img className='rating_star'
                     key={star}
                     src={star <= rating ? starActive : starInactive}
                     alt={star <= rating ? 'Etoile pleine':'Etoile vide'}
                 />
+                </div>
             ))}
 
 

@@ -1,16 +1,22 @@
-$font-size-medium: 24px;
+
+@use './../../styles/variables' as* ;
 
 .footer {
   background-color: black;
   height: 209px;
   width: 100%;
-  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: $font-size-medium;
+  box-sizing: border-box;
+  @include title;
 
+  &_p{margin-top: 40px;
+  }
+
+  &_logo{
+    padding-top: 66px;
+  }
 //  @media (max-width: 480px) {
 //   
 //      }

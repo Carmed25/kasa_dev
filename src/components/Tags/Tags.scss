@@ -1,23 +1,27 @@
-.tags{
+@use './../../styles/variables' as* ;
+
+.tagsContainer{
     display: flex;
     height:25px;
     width: 365px;
     gap: 10px;
     flex-wrap: wrap;
-}
 
-.tag{
+    &_tag{
         width: 115px;
-        height: 25px;
+        //height: 25px;
         border-radius: 10px;
         background-color: #ff6060;
-        color: white;
-        font-weight: 700;
-        font-size: 14px;
-        padding: 5px;
+        //padding: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         box-sizing: border-box;
+        white-space: nowrap;
+
+        @include title($size:14px,$weight:$weight-bold)
     }
+
+}
+

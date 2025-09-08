@@ -32,8 +32,8 @@ export default function Flat(){
             <div className='blocUn'>
 
                 <div className='titleTag'>
-                    <p>{flat.title}</p>
-                    <p>{flat.location}</p>
+                    <div className='titleTag_title'>{flat.title}</div>
+                    <div className='titleTag_location'>{flat.location}</div>
                     <Tags tags={flat.tags}/>
 
                 </div>

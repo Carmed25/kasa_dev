@@ -1,11 +1,22 @@
+@use './../../styles/variables' as* ;
+
 .rating{
     display: flex;
     gap: 5px;
     width: 196px;
     height: 36px;
+    margin-top: 25px;
 
-}
-.star{
+    &_container{
+        height: 36px;
+        width: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    &_star{
     width: 24px;
     height: 24px;
+}
 }

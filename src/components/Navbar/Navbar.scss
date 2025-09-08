@@ -1,18 +1,24 @@
-$font-weight-medium : 500;
-$font-size-medium: 24px;
 
-.navbar_list{
+@use './../../styles/variables' as* ;
+
+.navbar{
   display: flex;
-  justify-content: space-between;
-  gap: 57px;
-  list-style: none;
-  font-size: $font-size-medium;
-  font-weight: $font-weight-medium;
-  align-items: center;
-  height: 100%;
-  .navbar_link{
+  width: auto;
+  height: auto;
+
+  &_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    @include title;
+  }
+
+  &_link{
     a{text-decoration: none;
     color: black;
     }
-    }
+  }
 }

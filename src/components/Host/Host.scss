@@ -1,17 +1,17 @@
+@use './../../styles/variables' as* ;
+
 .host{
-    width:167px;
+    width: 196px;
     height: 64px;
     display: flex;
     align-items: center;
     gap:25px;
-    justify-content: flex-end;
+    justify-content: end;
     text-align: right;
+    //margin-top: 25px;
     
     &_name{
-        color: #ff6060;
-        font-size: 18px;
-        font-weight: 500;
-
+        @include title($size:$size-normal,$color:$main-color)
     }
     &_picture{
         width: 64px;

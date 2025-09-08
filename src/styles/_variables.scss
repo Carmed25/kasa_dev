@@ -1,2 +1,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$main-color:#ff6060;
+
+$size-large:48px;
+$size-mediumX:36px;
+$size-medium: 24px;
+$size-normal:18px;
+
+$weight-bold:700;
+
+
+@mixin title ($size:24px, $weight:500, $color:#ffffff){
+    font-family: 'Montserrat','sans-serif';
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+    line-height: 143%;
+}

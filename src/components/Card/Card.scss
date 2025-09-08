@@ -1,3 +1,6 @@
+@use './../../styles/variables' as* ;
+
+
 .card_container {
     width: 340px;
     height: 340px;
@@ -36,12 +39,13 @@
         }
 
      .card_title{
-        font-size: 18px;
-        font-weight: 700;
+       /* font-size: 18px;
+        font-weight: 700;*/
         color: white;
         position: absolute;
         left: 10px;
         bottom: 10px;
         z-index: 2;
+        @include title (18px, 700);
     }
 }}
