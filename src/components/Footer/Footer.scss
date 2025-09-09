@@ -11,13 +11,25 @@
   box-sizing: border-box;
   @include title;
 
-  &_p{margin-top: 40px;
+  &_p{
+    margin-top: 40px;
+    @media (max-width:$bk-mobile){
+      font-size:12px;
+      margin-top: 20px;
+      line-height: 100%;
+    }
   }
 
   &_logo{
     padding-top: 66px;
+    height: 40px;
   }
-//  @media (max-width: 480px) {
-//   
-//      }
+
+}
+
+.hidden{
+    display: none;
+    @media (max-width:$bk-mobile){
+        display: inline;
+    }
 }

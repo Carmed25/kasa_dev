@@ -6,7 +6,7 @@ import logoRed from '../../assets/logoRedDesktop.svg'
 export default function Header(){
     return(
         <div className='header'>
-            <img className='' src={logoRed} alt='Logo rouge Kasa'  />
+            <img className='header_logoRed' src={logoRed} alt='Logo rouge Kasa'  />
             <Navbar/>
         </div>
     );

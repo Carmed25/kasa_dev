@@ -1,3 +1,6 @@
+@use './styles/variables' as*;
+
+
 .App{
   display: flex;
   justify-content: center;
@@ -15,8 +18,9 @@
     padding-top: 45px;
     width: 100%;
 
-    @media (max-width: 767.98px) {
-    padding: 0;
+    @media (max-width:$bk-mobile) {
+    padding-top: 20px;
+    max-width: 375px;
       }
   }
 }

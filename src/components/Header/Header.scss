@@ -8,4 +8,15 @@
     align-items: center;
     height: 68px;
     max-height: 1240px;
+
+
+    &_logoRed{
+        width: 210px;
+        height: 68px;
+        @media (max-width:$bk-mobile){
+            width: 145px;
+            height: 47px;
+        }
+    }
 }
+

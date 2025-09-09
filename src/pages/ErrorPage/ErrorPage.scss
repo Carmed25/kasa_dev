@@ -10,19 +10,41 @@
     font-family: "Montserrat";
     gap: 139px;
     margin-top: 139px;
-    margin-bottom: 139px;
+    margin-bottom: 89px; //139-50
+
+    @media (max-width:$bk-mobile){
+        gap:113px;
+        margin-top: 113px;
+        margin-bottom: 63px; //113-50
+    }
 
     &_title{
-        @include title(288px,$weight-bold,$main-color)
+        @include title(288px,$weight-bold,$main-color);
+        @media (max-width:$bk-mobile){
+            font-size:96px;
+        }
 
     }
     &_text{
-        @include title ($size-mediumX,500,$main-color)
-
+        @include title ($size-mediumX,500,$main-color);
+         @media (max-width:$bk-mobile){
+            font-size: $size-normal;
+            text-align: center;
+        }
     }
 
     &_link{
-        @include title( $size-normal, 500, black)
+        @include title( $size-normal, 500, black);
+        @media (max-width:$bk-mobile){
+            font-size: 14px;
+        }
     }
 
+}
+
+.hidden{
+    display: none;
+    @media (max-width:$bk-mobile){
+        display: inline;
+    }
 }

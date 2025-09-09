@@ -14,6 +14,11 @@
     align-items: center;
     height: 100%;
     @include title;
+
+    @media (max-width:$bk-mobile){
+      gap:26px;
+      font-size: 12px;
+    }
   }
 
   &_link{
