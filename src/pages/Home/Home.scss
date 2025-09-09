@@ -1,1 +1,8 @@
+@use './../../styles/variables' as*;
 
+.hidden{
+    display: none;
+    @media (max-width:$bk-mobile){
+        display: inline;
+    }
+}

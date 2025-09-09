@@ -13,6 +13,10 @@
   min-height: 100vh;
   font-family: "Montserrat",sans-serif;
 
+  @media (max-width:$bk-mobile){
+    gap:30px;
+  };
+
   &_container{
     max-width: 1240px;
     padding-top: 45px;
@@ -20,7 +24,11 @@
 
     @media (max-width:$bk-mobile) {
     padding-top: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
     max-width: 375px;
+    box-sizing: border-box;
+
       }
   }
 }

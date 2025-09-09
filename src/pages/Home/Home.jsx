@@ -11,8 +11,10 @@ export default function Home(){
     return(
         <>
             <Banniere
-            image={imgBanHome} title="Chez vous, partout et ailleurs"/>
-         
+            image={imgBanHome} 
+            title={
+                <> Chez vous, <br className='hidden'/> partout et ailleurs</>}
+            />
             <Gallery/>
         </>
     )

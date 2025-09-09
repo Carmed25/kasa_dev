@@ -3,18 +3,26 @@
 @use './../../styles/variables' as* ;
 
 .banContainer{
-position: relative;
-max-width: 1240px;
-height: 223px;
-width: 100%;
-border-radius: 25px;
-border: 1px solid black;
-overflow: hidden;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-margin-top: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
+    position: relative;
+    max-width: 1240px;
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:$bk-mobile){
+        height: 111px;
+        justify-content: left;
+        border-radius: 10px;
+        margin-top: 0px;
+        }
+
+
 
 
     .banner_img{
@@ -37,14 +45,18 @@ align-items: center;
         z-index:1;
     }
 
-
     .banner_title{ //revoir contouring du texte 
-     
         text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         z-index: 2;
         position: relative;
         // absolute top: 78px - left: 273px;
         @include title ($size-large,$weight-bold);
+        @media (max-width:$bk-mobile){
+            font-size: $size-medium;
+            align-self: flex-start;
+            padding-left: 16px;
+            line-height: 100%;
+        }
 
     }
 }

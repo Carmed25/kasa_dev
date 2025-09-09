@@ -14,18 +14,31 @@
     box-sizing: border-box;
     overflow: hidden;
 
+    @media (max-width:$bk-mobile){
+        height: 30px;
+        padding:10px 6px 10px 10px;
+    }
+
 
 
     &_title{
         height: 54px;
         display: flex;
         align-items: center;
-        @include title($weight:$weight-bold)
+        @include title($weight:$weight-bold);
+        @media (max-width:$bk-mobile){
+            font-size:13px;
+        }
     }
+
     &_logo{
         width: 24px;
         height: 13px;
         transition: transform 0.3s ease;
+        @media (max-width:$bk-mobile){
+            width: 16px;
+            height: 9px;
+        }
         &.rotate{
             transform: rotate(-180deg);
         }
@@ -44,7 +57,10 @@
     background-color:#f6f6f6;
     border-radius: 0 0 5px 5px;
     padding: 20px;
-    @include title($size-normal,400,black)
+    @include title($size-normal,400,black);
+    @media (max-width:$bk-mobile){
+        font-size: 12px;
+    }
 }}
 
 .flatCollapse {
