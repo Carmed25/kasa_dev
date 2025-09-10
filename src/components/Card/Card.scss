@@ -10,6 +10,12 @@
     overflow: hidden;
     border-radius: 10px;
 
+    @media (max-width:$bk-mobile){
+        max-width: 335px;
+        max-height: 255px;
+        margin-top: 0;
+    }
+
     .card_img{
         width: 100%;
         height: 100%;
@@ -45,5 +51,8 @@
         bottom: 10px;
         z-index: 2;
         @include title (18px, 700);
+        @media (max-width:$bk-mobile){
+            font-size:$size-normal;
+        }
     }
 }}

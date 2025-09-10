@@ -3,6 +3,15 @@
 .flat{
     max-width: 1240px;
     min-height: 643px;
+    margin-top: 50px;
+    @media (max-width:$bk-mobile){
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        margin-top: 27px;
+
+    }
 }
 
 .blocUn{
@@ -11,20 +20,41 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 25px;
+    @media (max-width:$bk-mobile){
+        flex-direction: column;
+        margin-top:0;
+    }
 
 }
  .titleTag{
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     &_title{
-        @include title($size:$size-mediumX,$color:$main-color)
+        @include title($size:$size-mediumX,$color:$main-color);
+        @media (max-width:$bk-mobile){
+            font-size:$size-normal
+        }
     }
     &_location{
         margin-bottom: 25px;
-        @include title($size:$size-normal,$color:black)
+        @include title($size:$size-normal,$color:black);
+        @media (max-width:$bk-mobile){
+            font-size: 14px;
+        }
     }
 
+ }
+
+ .hostRating{
+    display: flex;
+    flex-direction: column;
+    @media(max-width:$bk-mobile){
+        flex-direction: row-reverse;
+        gap:100px;
+        margin-top: 15px;
+    }
  }
 
 .blocDeux{
@@ -34,6 +64,11 @@
     justify-content:center;
     gap:76px;
     margin: 25px auto;
-
+    @media ( max-width:$bk-mobile){
+        flex-direction: column;
+        gap: 20px;
+        margin-top:0;
+        margin-bottom: 0;
+    }
 
 }

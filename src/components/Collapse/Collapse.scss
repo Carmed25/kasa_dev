@@ -67,9 +67,15 @@
     .collapse-header{
     border-radius: 10px;
     &_title{
-        @include title(18px,$weight-bold,white)
+        @include title(18px,$weight-bold,white);
+        @media (max-width:$bk-mobile){
+            font-size: 13px;
+        }
     }
-
+    @media (max-width:$bk-mobile){
+        width: 335px;
+        height: 30px;
+    }
 } 
 }
 

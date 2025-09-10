@@ -6,6 +6,9 @@
     width: 365px;
     gap: 10px;
     flex-wrap: wrap;
+    @media (max-width:$bk-mobile){
+        height: 18px;
+    }
 
     &_tag{
         width: 115px;
@@ -20,7 +23,12 @@
         box-sizing: border-box;
         white-space: nowrap;
 
-        @include title($size:14px,$weight:$weight-bold)
+        @include title($size:14px,$weight:$weight-bold);
+        @media (max-width:$bk-mobile){
+            width:84px;
+            border-radius: 5px;
+            font-size: 10px;
+        }
     }
 
 }

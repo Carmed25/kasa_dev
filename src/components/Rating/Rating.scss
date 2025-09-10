@@ -6,6 +6,11 @@
     width: 196px;
     height: 36px;
     margin-top: 25px;
+    @media (max-width:$bk-mobile){
+        width: 98px;
+        height: 18px;
+        margin-top: 5px;
+    }
 
     &_container{
         height: 36px;
@@ -13,10 +18,18 @@
         display: flex;
         align-items: center;
         justify-content: end;
+        @media (max-width:$bk-mobile){
+            width:18px;
+            height: 18px;
+        }
     }
 
     &_star{
     width: 24px;
     height: 24px;
+    @media (max-width:$bk-mobile){
+        width: 13px;
+        height: 13px;
+    }
 }
 }

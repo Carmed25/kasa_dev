@@ -9,14 +9,26 @@
     justify-content: end;
     text-align: right;
     //margin-top: 25px;
+    @media (max-width:$bk-mobile){
+        width: 135px;
+        height:33px;
+        gap: 10px;
+    }
     
     &_name{
-        @include title($size:$size-normal,$color:$main-color)
+        @include title($size:$size-normal,$color:$main-color);
+        @media (max-width:$bk-mobile){
+            font-size: 12px;
+        }
     }
     &_picture{
         width: 64px;
         height: 64px;
         border-radius: 90px;
         object-fit: cover ;
+        @media(max-width:$bk-mobile){
+            width: 32px;
+            height: 32px;
+        }
     }
 }

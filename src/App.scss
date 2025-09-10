@@ -14,7 +14,7 @@
   font-family: "Montserrat",sans-serif;
 
   @media (max-width:$bk-mobile){
-    gap:30px;
+    gap:27px;
   };
 
   &_container{
@@ -23,7 +23,7 @@
     width: 100%;
 
     @media (max-width:$bk-mobile) {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-left: 19px;
     padding-right: 19px;
     max-width: 375px;

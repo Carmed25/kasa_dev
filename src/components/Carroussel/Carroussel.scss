@@ -5,12 +5,19 @@
     max-height: 415px;
     position:relative;
     overflow: hidden;
+    @media (max-width:$bk-mobile){
+        height: 255px;
+    }
     
 &_cover{
     width: 100%;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
+    @media(max-width:$bk-mobile){
+        height: 100%;
+        border-radius: 10px;
+    }
 }
 
 &_arrow-left,
@@ -23,19 +30,33 @@
     width: 46px;
     height: 79px;
     color: red;
+    @media(max-width:$bk-mobile){
+        width: 12px;
+        height: 20px;
+    }
 }
 &_arrow-left{
     left: 20px;
+    @media (max-width:$bk-mobile){
+        left: 6px;
+    }
 
 }
 &_arrow-right{
     right:20px;
+    @media (max-width:$bk-mobile){
+        right: 6px;
+    }
+
 }
 &_counter{
     position: absolute;
     bottom:20px;
     left: 50%;
     transform: translateX(-50%);
-    @include title($size-normal)
+    @include title($size-normal);
+    @media (max-width:$bk-mobile){
+        display:none;
+    }
 }
 }
