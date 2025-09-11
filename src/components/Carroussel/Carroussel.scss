@@ -34,6 +34,10 @@
         width: 12px;
         height: 20px;
     }
+     @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+        height: 62px;
+        width:35px;
+    }
 }
 &_arrow-left{
     left: 20px;

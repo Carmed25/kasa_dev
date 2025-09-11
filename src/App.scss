@@ -16,6 +16,8 @@
   @media (max-width:$bk-mobile){
     gap:27px;
   };
+    
+   
 
   &_container{
     max-width: 1240px;
@@ -28,7 +30,14 @@
     padding-right: 19px;
     max-width: 375px;
     box-sizing: border-box;
-
-      }
+    };
+     @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 0;
+    max-width: 1079px;
+    box-sizing: border-box;
+   }
+   
   }
 }

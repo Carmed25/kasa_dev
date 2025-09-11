@@ -23,4 +23,7 @@
         background-color: white;
         padding: 0;
     }
+     @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+        grid-template-columns: 1fr 1fr;
+    }
 }

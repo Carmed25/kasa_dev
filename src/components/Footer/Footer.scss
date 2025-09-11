@@ -10,6 +10,9 @@
   align-items: center;
   box-sizing: border-box;
   @include title;
+  @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+   margin: 0;
+   }
 
   &_p{
     margin-top: 40px;

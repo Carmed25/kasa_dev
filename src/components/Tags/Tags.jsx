@@ -6,6 +6,7 @@ export default function Tags({tags}){
             {tags.map((tag, index)=>(
                 <span key={index} className='tagsContainer_tag' title={tag}>
                     {tag.split(" ")[0]} 
+                    <div className='tag-content'>{tag}</div>
                 </span>
             ))
             }

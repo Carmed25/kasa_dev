@@ -43,11 +43,11 @@ export default function Flat(){
                 </div>
             </div>
             <div className='blocDeux flatCollapse'>
-                <Collapse title="Description" customWidth="582px">
+                <Collapse title="Description" customWidth="100%">
                     <p>{flat.description}
                     </p>
                 </Collapse>
-                <Collapse title='Équipements' customWidth='582px'>
+                <Collapse title='Équipements' customWidth='100%'>
                     <ul>
                         {flat.equipments.map ((item, index)=>(
                         <li key={index}>

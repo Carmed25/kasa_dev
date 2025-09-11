@@ -3,11 +3,14 @@
 .tagsContainer{
     display: flex;
     height:25px;
-    width: 365px;
+    width:auto; // 365px;
     gap: 10px;
     flex-wrap: wrap;
     @media (max-width:$bk-mobile){
         height: 18px;
+    }
+     @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+        width: 500px;
     }
 
     &_tag{
@@ -22,12 +25,29 @@
         text-align: center;
         box-sizing: border-box;
         white-space: nowrap;
+        position: relative;
+        cursor: default;
+
 
         @include title($size:14px,$weight:$weight-bold);
         @media (max-width:$bk-mobile){
             width:84px;
             border-radius: 5px;
             font-size: 10px;
+        }
+
+        .tag-content{
+            position:absolute;
+            bottom:-10px;
+            width:100%;
+            opacity: 0;
+            visibility: hidden;
+
+            .tagsContainer_tag:hover &{
+                opacity: 1;
+                visibility: visible;
+               
+            }
         }
     }
 

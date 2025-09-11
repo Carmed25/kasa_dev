@@ -60,6 +60,8 @@
     @include title($size-normal,400,black);
     @media (max-width:$bk-mobile){
         font-size: 12px;
+        max-width: 335px;
+        box-sizing: border-box;
     }
 }}
 
@@ -75,6 +77,11 @@
     @media (max-width:$bk-mobile){
         width: 335px;
         height: 30px;
+    }
+     @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+    
+        height: 52px;
+        width: 100%;
     }
 } 
 }
