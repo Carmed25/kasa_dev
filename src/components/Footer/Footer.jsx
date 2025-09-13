@@ -1,4 +1,4 @@
-//import logo
+
 import './Footer.scss'
 import logoWhite from '../../assets/logoWhiteDesktop.svg'
 

@@ -1,16 +1,24 @@
-// import feuille de style
 
-import { Link } from "react-router-dom";
+
+import { NavLink } from "react-router-dom";
 import './Navbar.scss'
 
 export default function Navbar(){
     return(
         <nav className="navbar">
             <ul className="navbar_list">
-                <li className="navbar_link"><Link to='/' >Accueil</Link></li>
-                <li className="navbar_link"><Link to='/about' >A propos</Link></li>
+                <li className="navbar_link">
+                    <NavLink to='/' className={({isActive})=>(isActive? 'active':'')} >Accueil 
+                    </NavLink>
+                </li>
+
+                <li className="navbar_link">
+                    <NavLink to='/about' className={({isActive})=>(isActive? 'active':'')} >A propos
+                    </NavLink>
+                </li>
             
            </ul>
         </nav>
     );
 }
+

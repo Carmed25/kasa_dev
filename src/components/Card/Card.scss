@@ -34,7 +34,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 50%; // revoir la hauteur du degradé
+            height: 50%; // hauteur du degradé
             background: linear-gradient(
                 180deg,
                 rgba(255, 255, 255, 0) 0%,
@@ -45,7 +45,7 @@
         z-index:1;
         }
 
-     .card_title{
+    .card_title{
         position: absolute;
         left: 10px;
         bottom: 10px;

@@ -3,10 +3,6 @@ import arrowLeft from '../../assets/arrowLeft.png'
 import arrowRight from '../../assets/arrowRight.png'
 import { useState } from 'react'
 
-// const [a, setA]=useState(false);
-//const handleClick=()=>{
-//        setA(!a);
-       // }
 
 export default function Carroussel({pictures}){
 

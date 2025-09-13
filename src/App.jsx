@@ -9,9 +9,7 @@ import AppRouter from './Router'
 
 function App() {
   // state(etat, donnees, data)
-
   // comportement
-
   // affichage (render)
 
   return (

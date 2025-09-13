@@ -1,5 +1,5 @@
 
-//@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @use './../../styles/variables' as* ;
 
 .errorPage{
@@ -23,12 +23,15 @@
         @media (max-width:$bk-mobile){
             font-size:96px;
         }
-
     }
     &_text{
         @include title ($size-mediumX,500,$main-color);
          @media (max-width:$bk-mobile){
             font-size: $size-normal;
+            text-align: center;
+        }
+        @media (min-width:$bk-tablet-min) and (max-width:$bk-tablet-max){
+            font-size:$size-medium;
             text-align: center;
         }
     }
@@ -39,7 +42,6 @@
             font-size: 14px;
         }
     }
-
 }
 
 .hidden{

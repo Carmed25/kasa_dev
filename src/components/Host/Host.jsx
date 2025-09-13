@@ -8,6 +8,5 @@ export default function Host({name,picture}){
 
         </div>
 
-
     )
 }

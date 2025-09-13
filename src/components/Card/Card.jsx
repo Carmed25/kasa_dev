@@ -9,7 +9,7 @@ export default function Card({title,cover,id}){
         <div className='card_img'>
             <img src={cover} alt={title}/>
             <div className='gradient_overlay'></div>
-            <div className='card_title'>{title}</div>
+            <h2 className='card_title'>{title}</h2>
         </div>
         </Link>
        </>

@@ -1,7 +1,4 @@
 
-//import Header from '../../components/Header/Header'
-//import Footer from '../components/Footer/Footer'
- 
 
 import './Flat.scss'
 import { Navigate, useParams } from 'react-router-dom'
@@ -30,18 +27,18 @@ export default function Flat(){
         <div className='flat'>
             <Carroussel pictures={flat.pictures}/>
             <div className='blocUn'>
-
                 <div className='titleTag'>
-                    <div className='titleTag_title'>{flat.title}</div>
+                    <h1 className='titleTag_title'>{flat.title}</h1>
                     <div className='titleTag_location'>{flat.location}</div>
                     <Tags tags={flat.tags}/>
-
                 </div>
+
                 <div className='hostRating'>
                 <Host name={flat.host.name} picture={flat.host.picture}/> 
                 <Rating rating={parseInt(flat.rating)}/>
                 </div>
             </div>
+
             <div className='blocDeux flatCollapse'>
                 <Collapse title="Description" customWidth="100%">
                     <p>{flat.description}
@@ -50,13 +47,9 @@ export default function Flat(){
                 <Collapse title='Équipements' customWidth='100%'>
                     <ul>
                         {flat.equipments.map ((item, index)=>(
-                        <li key={index}>
-                            {item}
-                        </li>))}
+                        <li key={index}> {item} </li>))}
                     </ul>
-                
                 </Collapse>
-
             </div>
         </div>
     )
