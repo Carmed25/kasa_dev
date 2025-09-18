@@ -13,6 +13,8 @@
     align-items: center;
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 
     @media (max-width:$bk-mobile){
         height: 30px;
@@ -56,14 +58,32 @@
     &_content{
     background-color:#f6f6f6;
     border-radius: 0 0 5px 5px;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     @include title($size-normal,400,black);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 
+        max-height 0.7s ease, 
+        opacity 0.7s ease, 
+        padding-top 0.7s ease, 
+        padding-bottom 0.7s ease;
+
+     &--open {
+        max-height: 300px;
+        opacity:1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
     @media (max-width:$bk-mobile){
         font-size: 12px;
         max-width: 335px;
         box-sizing: border-box;
     }
-}}
+    }
+   
+}
 
 .flatCollapse {
     .collapse-header{

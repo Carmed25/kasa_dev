@@ -24,9 +24,10 @@ export default function Collapse({title,children, customWidth}){
                 </button>  
             </div>
 
-            {isOpen &&(
-                <div className='collapse-header_content'>{children}</div>
-            )}
+            
+                <div className={`collapse-header_content ${isOpen ?'collapse-header_content--open':''}`}>
+                    {children}
+                </div>
         </div>
     )
 }

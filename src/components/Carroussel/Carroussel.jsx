@@ -9,9 +9,9 @@ export default function Carroussel({pictures}){
     //etat initial et possibilité de modifier cet état avec setIndex
     const [index, setIndex]= useState(0)
 
-     const next =()=>{
-            setIndex ((prevIndex)=> (prevIndex + 1) % pictures.length)
-        }
+    const next =()=>{
+        setIndex ((prevIndex)=> (prevIndex + 1) % pictures.length)
+    }
 
     const prev=()=> {
        setIndex ((prevIndex)=>(prevIndex - 1 + pictures.length) % pictures.length)
